@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CalculatorApp</string>
+    <string name="hint_input">请输入表达式</string>
+    <string name="hint_result">计算结果</string>
+</resources>
