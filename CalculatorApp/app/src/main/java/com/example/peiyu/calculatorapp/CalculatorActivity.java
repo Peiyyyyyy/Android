@@ -1,5 +1,6 @@
 package com.example.peiyu.calculatorapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -72,6 +73,12 @@ public class CalculatorActivity extends AppCompatActivity implements View.OnClic
         int id = item.getItemId();
 
         switch(id){
+            case R.id.degree:
+                item.setIntent(new Intent(CalculatorActivity.this, UnitConvertion.class));
+                break;
+            case R.id.length:
+                item.setIntent((new Intent(CalculatorActivity.this, LengthUnit.class)));
+                break;
             case R.id.help_item:
                 Toast.makeText(getApplicationContext(), "这是帮助", Toast.LENGTH_LONG).show();
                 break;
@@ -579,7 +586,7 @@ public class CalculatorActivity extends AppCompatActivity implements View.OnClic
      *
      * 判断数字是否就是一个 0
      * 是 把字符串设置为空字符串。
-     *   1、打开界面没有运算过的时候，AC键归零或删除完归零的时候，会显示一个 0
+     *   1、打开界面没有运算过的时候，C键归零或删除完归零的时候，会显示一个 0
      *   2、当数字是 0 的时候，设置成空字符串，再按 0 ，数字会还是 0，不然可以按出 000 这种数字
      * 否 添加按下的键的字符
      *

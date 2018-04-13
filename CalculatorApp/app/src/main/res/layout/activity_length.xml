@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/unit_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:entries="@array/length_item"
+        android:layout_marginTop="10dp">
+    </Spinner>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <EditText
+            android:id="@+id/num_1"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="4"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="10dp"
+            android:gravity="end"
+            android:textSize="20sp"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:textSize="20sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/unit_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:entries="@array/length_item"
+        android:layout_marginTop="10dp">
+    </Spinner>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <TextView
+            android:id="@+id/num_2"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="4"
+            android:layout_gravity="bottom"
+            android:gravity="end"
+            android:layout_marginEnd="10dp"
+            android:hint="0.0"
+            android:textSize="20sp"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/convertion2"
+        android:layout_width="80dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:text="转    换"
+        android:textSize="18sp"
+        android:background="#679cd0"/>
+
+</LinearLayout>

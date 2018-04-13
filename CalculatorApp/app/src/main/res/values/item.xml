@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="degree_item">
+        <item>摄氏度</item>
+        <item>华氏度</item>
+        <item>开尔文</item>
+    </string-array>
+    <string-array name="length_item">
+        <item>米</item>
+        <item>里</item>
+        <item>厘米</item>
+        <item>英里</item>
+    </string-array>
+    <string-array name="sys_item">
+
+    </string-array>
+</resources>

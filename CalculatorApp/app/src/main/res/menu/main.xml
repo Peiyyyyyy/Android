@@ -2,6 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/degree"
+        android:title="Degree Unit"/>
+
+    <item
+        android:id="@+id/length"
+        android:title="Length Unit"/>
+
+    <item
         android:id="@+id/help_item"
         android:title="Help" />
 
