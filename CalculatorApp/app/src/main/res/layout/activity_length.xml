@@ -25,6 +25,7 @@
             android:layout_gravity="bottom"
             android:layout_marginRight="10dp"
             android:gravity="end"
+            android:text="0.0"
             android:textSize="20sp"
             android:background="@null"/>
 

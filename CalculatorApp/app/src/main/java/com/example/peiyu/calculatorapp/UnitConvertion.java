@@ -74,9 +74,9 @@ public class UnitConvertion extends AppCompatActivity {
                 double i = Double.parseDouble(str);
                 String s;
 
-                if (unit1.equals("米")) {
+                if (unit1.equals("摄氏度")) {
                     switch (unit2) {
-                        case "千米":
+                        case "摄氏度":
                             result.setText(str);
                             break;
                         case "华氏度":
@@ -90,7 +90,7 @@ public class UnitConvertion extends AppCompatActivity {
                             result.setText(s);
                             break;
                     }
-                } else if (unit1.equals("里")) {
+                } else if (unit1.equals("华氏度")) {
                     switch (unit2) {
                         case "摄氏度":
                             i = (i - 32) / 1.8;
@@ -109,7 +109,7 @@ public class UnitConvertion extends AppCompatActivity {
                             break;
                     }
                 }
-                else if (unit1.equals("")){
+                else{
                     switch (unit2) {
                         case "摄氏度":
                             i = i - 273.15;
@@ -119,7 +119,7 @@ public class UnitConvertion extends AppCompatActivity {
                         case "华氏度":
                             i = i * 1.8 - 459.67;
                             s = Double.toString(i);
-                            result.setText(str);
+                            result.setText(s);
                             break;
                         case "开尔文":
 //                    i = (i + 459.67) / 1.8;
