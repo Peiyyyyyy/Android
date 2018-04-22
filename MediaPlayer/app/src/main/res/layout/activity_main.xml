@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/coverImage"
+        android:layout_width="240dip"
+        android:layout_height="240dip"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/timg"
+        android:scaleType="centerInside"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="请选择音乐"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <TableRow
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/playingTime"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="15dp"/>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/totalTime"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="15dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/loop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/style"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="8dp"
+            android:id="@+id/start"
+            android:background="@drawable/start"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="8dp"
+            android:id="@+id/pause"
+            android:background="@drawable/pause"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/stop"
+            android:background="@drawable/stop"/>
+
+        <ImageView
+            android:id="@+id/pop_list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/list"/>
+
+    </TableRow>
+
+    <!--TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showLoop" /-->
+
+</LinearLayout>

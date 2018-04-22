@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/name1"
+        android:title="米津玄師 - Lemon"/>
+
+    <item android:id="@+id/name2"
+        android:title="DAOKO,米津玄師 - 打上花火"/>
+
+    <item android:id="@+id/name4"
+        android:title="レミオロメン - 粉雪"/>
+
+    <item android:id="@+id/name5"
+        android:title="Goose house - 恋はヒラひらり"/>
+
+    <item android:id="@+id/name6"
+        android:title="周杰伦 - 告白气球"/>
+
+    <item android:id="@+id/name7"
+        android:title="花澤香菜 - sweets parade"/>
+
+    <item android:id="@+id/name8"
+        android:title="Ed Sheeran - Shape of You"/>
+</menu>
