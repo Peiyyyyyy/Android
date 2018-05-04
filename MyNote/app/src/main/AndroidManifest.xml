@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.journeyfu.www.personal_journal">
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_journal"
+        android:label="My Note"
+        android:roundIcon="@mipmap/ic_journal"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name="com.example.peiyu.mynote.LoginActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.peiyu.mynote.RegisterActivity" />
+        <activity android:name="com.example.peiyu.mynote.JournallistActivity" android:windowSoftInputMode="stateHidden|adjustResize" />
+
+    </application>
+
+</manifest>

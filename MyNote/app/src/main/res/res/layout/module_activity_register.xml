@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_register_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center"
+        android:textSize="20sp"
+        android:text="欢迎注册FNote"/>
+
+    <EditText
+        android:id="@+id/et_register_inputUsername"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="请输入用户名"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/et_register_inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textPassword"
+        android:hint="请输入密码"/>
+    <EditText
+        android:id="@+id/et_register_inputPasswordagain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:inputType="textPassword"
+        android:hint="请再次确认密码"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/btn_register_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册" />
+        <Button
+            android:id="@+id/btn_register_return"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="返回" />
+    </LinearLayout>
+</LinearLayout>
